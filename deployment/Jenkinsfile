@@ -21,6 +21,7 @@ podTemplate(
         emptyDirVolume(mountPath: '/opt/sonar-scanner/.sonar/cache', memory: false)
     ]
 ) {
+
     node(PIPELINE_ID) {
         def props
         def imageTag = getImageTag()
